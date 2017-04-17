@@ -1,0 +1,18 @@
+<!-- Calendar Top Area-->
+<div class="row" id="cal_top">
+  <cal-top (changeDay)="outputEvent($event)"></cal-top>
+</div>
+<div class="divider"></div>
+<div class="row">
+
+  <!-- Calendar Side Area -->
+  <div class="col s2">
+    <cal-side></cal-side>
+  </div>
+
+  <!-- Calendar Content Area-->
+  <div class="col s10">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<div class="row">
+  <h4>{{calendarService.getNowMonth()}}월</h4>
+  <table class="bordered striped calendar">
+    <thead>
+      <tr>
+        <th></th>
+        <th>SUN</th>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td class="week_date" [ngClass]="calendarService.dateColor(weeks[i].month, weeks[i].day)" 
+        *ngFor="let item of createRange(7); let i=index">
+          <b>{{weeks[i].day}}</b>
+        </td>
+      </tr>
+    </tbody>
+
+    <tbody>
+      <tr class="week_date" *ngFor="let item of createRange(24); let i=index">
+        <td>{{i}}:00</td>
+        <td *ngFor="let item of createRange(7); let i=index">
+          <b></b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

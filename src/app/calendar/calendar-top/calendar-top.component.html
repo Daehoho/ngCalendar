@@ -1,0 +1,39 @@
+<div class="col s1 center">
+  <a>Calendar</a>
+</div>
+<div class="col s3">
+  <button (click)="setToDay()" id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat">Today</button>
+  <button (click)="setPrev()" id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat"><i class="material-icons">keyboard_arrow_left</i></button>
+  <button (click)="setNext()" id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat"><i class="material-icons">keyboard_arrow_right</i></button>
+  <a id="current_day" class="black-text"> {{calendarService.getNowDate().toDateString()}} </a>
+</div>
+
+<div class="col s1 right">
+  <a id="common_btn" class="right grey lighten-3 waves-effect waves-light white dropdown-button btn-flat" data-activates='settings'>
+    <i class="material-icons">settings</i>
+    <i class="material-icons">arrow_drop_down</i>
+  </a>
+  <ul id="settings" class="right dropdown-content">
+    <li><a>test1</a></li>
+    <li><a>test2</a></li>
+    <li><a>test3</a></li>
+  </ul>
+</div>
+
+<div class="col s4 right">
+  <a routerLink="./day" id="common_btn" class="grey lighten-3 waves-effect waves-light white  btn-flat" data-activates='settings'>
+    Day
+  </a>
+
+  <a routerLink="./week" id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat" data-activates='settings'>
+    Week
+  </a>
+
+  <a routerLink="./month" id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat" data-activates='settings'>
+    Month
+  </a>
+
+  <a routerLink="./to-do-list"id="common_btn" class="grey lighten-3 waves-effect waves-light white btn-flat" data-activates='settings'>
+    To-Do List
+  </a>
+</div>

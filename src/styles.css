@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.calendar {
+    table-layout: fixed;
+}
+.main_cal_th{
+    text-align: center;
+    border: 1px solid #d0d0d0;
+}
+.main_cal_td {
+    text-align: left;
+    border: 1px solid #d0d0d0;
+}
+.side_cal_th {
+    padding: 5px 5px 5px 5px;
+}
+.side_cal_td {
+    padding: 5px 5px 5px 5px;
+}
+.week_date {
+    text-align: center;
+}

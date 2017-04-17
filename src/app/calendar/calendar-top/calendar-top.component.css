@@ -1,0 +1,12 @@
+#top-title{
+    height:auto;
+}
+#common_btn {
+    border: 1px lightgray solid;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#current_day {
+    margin-left: 20px;
+    margin-right: 20px;
+}
